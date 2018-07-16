@@ -55,11 +55,13 @@ function removeFromCart(item) {
   return getCart().splice(itemIndex, 1);
 }
 
-function placeOrder(number){
-  if(number === undefined){
+function placeOrder(card){
+  if(card === undefined){
     console.log("Sorry, we don't have a credit card on file for you..");
   } else {
-    
+    var total = total();
+    setCart([]);
+    return total;
   }
 }
 //helper function
