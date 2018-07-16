@@ -41,7 +41,7 @@ function total(){
 }
 function removeFromCart(item) {
   var itemIndex = -1;
-  var array = [];
+  var array1 = [];
   var array2 = [];
   
   for (let i = 0; i< cart.length; i++){
@@ -54,10 +54,10 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
   
-  array = cart.slice(0, itemIndex);
-  array2 = cart.slice(itemIndex, cart.length-1);
+  array1 = cart.slice(0, itemIndex);
+  array2 = cart.slice(itemIndex, cart.length);
   
-  return array.concat(array2);
+  return array1.concat(array2);
 }
 
 //helper function
