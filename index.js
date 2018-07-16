@@ -55,9 +55,9 @@ function removeFromCart(item) {
   return getCart().splice(itemIndex, 1);
 }
 
-function placeOrder(){
-  if(!cart.length){
-    
+function placeOrder(number){
+  if(!number){
+    console.log("Sorry, we don't have a credit card on file for you..");
   }
 }
 //helper function
