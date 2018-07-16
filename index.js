@@ -34,7 +34,7 @@ function viewCart() {
 
 function total(){
   var total = 0;
-  for(let i =0; i < getCart().length; i++){
+  for (let i =0; i < getCart().length; i++){
     total += getCart()[i].itemPrice;
   }
   return total;
@@ -59,9 +59,9 @@ function placeOrder(card){
   if(card === undefined){
     console.log("Sorry, we don't have a credit card on file for you..");
   } else {
-    var total = total();
+    var sum = total();
     setCart([]);
-    return `Your total cost is $${total}, which will be charged to the card ${card}`;
+    return `Your total cost is $${sum}, which will be charged to the card ${card}`;
   }
 }
 //helper function
