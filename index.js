@@ -34,10 +34,10 @@ function viewCart() {
 
 function total(){
   var total = 0;
-  for(let i =0; i<cart.length; i++){
-    total += cart[i].itemPrice;
+  for(let i =0; i < getCart().length; i++){
+    total += getCart()[i].itemPrice;
   }
-  return total
+  return total;
 }
 
 //helper function
