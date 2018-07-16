@@ -32,6 +32,14 @@ function viewCart() {
   return `${description}.`;
 }
 
+function total(){
+  var total = 0;
+  for(let i =0; i<cart.length; i++){
+    total =+ cart.itemPrice;
+  }
+  return total
+}
+
 //helper function
 function generateCartItem(item){
   var newItem = {
