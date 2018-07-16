@@ -55,6 +55,11 @@ function removeFromCart(item) {
   return getCart().splice(itemIndex, 1);
 }
 
+function placeOrder(){
+  if(!cart.length){
+    
+  }
+}
 //helper function
 function generateCartItem(item){
   var newItem = {
