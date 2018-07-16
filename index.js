@@ -40,11 +40,14 @@ function total(){
   return total;
 }
 function removeFromCart(item) {
-  var itemIndex;
+  var itemIndex = -1;
   var array = [];
   for (let i = 0; i< cart.length; i++){
     if(cart[i]===item){
       itemIndex = i;
+    }
+    if (itemIndex -1){
+      return
     }
   }
   array.push(cart.slice(0,itemIndex-1));
