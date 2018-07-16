@@ -15,6 +15,10 @@ function addToCart(item){
   return `${newItem.itemName} has been added to your cart.`;
 }
 function viewCart() {
+  if (cart.length === 0)
+  {
+    return 
+  }
   var description = "In your cart, you have ";
   for (let i = 0; i < cart.length; i++){
     description = description + `${cart[i].itemName} at $${cart[i].itemPrice}`;
