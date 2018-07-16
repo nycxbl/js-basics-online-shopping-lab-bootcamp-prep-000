@@ -24,7 +24,7 @@ function viewCart() {
     if (i === cart.length-2){
       description = `${description}, and `;
     }
-    if (i > 0){
+    if (i > 0 && i < cart.length-2){
       description = `${description}, `;
     }
     
