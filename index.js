@@ -23,7 +23,9 @@ function viewCart() {
     description = description + `${cart[i].itemName} at $${cart[i].itemPrice}`;
     if (i === cart.length-2){
       description = `${description}, and `;
-    
+    }
+    if (i > 0){
+      description = `${description}, `;
     }
     
   }
