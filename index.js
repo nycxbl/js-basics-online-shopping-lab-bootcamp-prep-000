@@ -50,8 +50,8 @@ function removeFromCart(item) {
       return "That item is not in your cart.";
     }
   }
-  array.push(cart.slice(0,itemIndex-1));
-  array.push(cart.slice(itemIndex-1, cart.length-1));
+  array.push(cart.slice(0,itemIndex));
+  array.push(cart.slice(itemIndex, cart.length-1));
   
   return array;
 }
