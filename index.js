@@ -25,7 +25,7 @@ function viewCart() {
       description = " " + description + " , and ";
     }
   }
-  return `${description}.`;
+  return `and ${description}.`;
 }
 //helper
 function generateCartItem(item){
