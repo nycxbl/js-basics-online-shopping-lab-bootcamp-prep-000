@@ -46,7 +46,7 @@ function removeFromCart(item) {
     if(cart[i]===item){
       itemIndex = i;
     }
-    if (itemIndex -1){
+    if (itemIndex === -1){
       return "That item is not in your cart.";
     }
   }
