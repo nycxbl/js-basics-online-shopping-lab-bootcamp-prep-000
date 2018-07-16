@@ -39,6 +39,16 @@ function total(){
   }
   return total;
 }
+function removeFromCart(item) {
+  var itemIndex;
+  var array = [];
+  for (let i = 0; i< cart.length; i++){
+    if(cart[i]===item){
+      itemIndex = i;
+    }
+  }
+  array = cart.splice()
+}
 
 //helper function
 function generateCartItem(item){
