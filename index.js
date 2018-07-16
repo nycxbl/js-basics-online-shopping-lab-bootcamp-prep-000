@@ -47,7 +47,7 @@ function removeFromCart(item) {
       itemIndex = i;
     }
     if (itemIndex -1){
-      return
+      return "That item is not in your cart.";
     }
   }
   array.push(cart.slice(0,itemIndex-1));
