@@ -25,7 +25,7 @@ function viewCart() {
       description = `${description}, and `;
     }
     if (i > 0){
-      description = `${description}, `;
+      description =+ `${description}, `;
     }
     
   }
