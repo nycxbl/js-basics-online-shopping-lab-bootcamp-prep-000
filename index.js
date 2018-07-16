@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item){
   var newItem = generateCartItem(item);
   getCart().push(newItem);
-  return `s{newItem.itemName} has been added to your cart.`;
+  return `${newItem.itemName} has been added to your cart.`;
 }
 function viewCart() {
   var description = "In your cart, you have ";
