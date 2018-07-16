@@ -14,6 +14,7 @@ function addToCart(item){
   getCart().push(newItem);
   return `${newItem.itemName} has been added to your cart.`;
 }
+
 function viewCart() {
   if (!cart.length){
     return 'Your shopping cart is empty.';
@@ -30,15 +31,16 @@ function viewCart() {
   }
   return `${description}.`;
 }
-//helper
+
+//helper function
 function generateCartItem(item){
   var newItem = {
     itemName: item,
     itemPrice: getRandomInt(1, 100),
   };
-  
   return newItem;
 }
+
 function getRandomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
