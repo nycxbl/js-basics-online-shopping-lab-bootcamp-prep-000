@@ -20,7 +20,7 @@ function viewCart() {
   }
   var description = "In your cart, you have ";
   for (let i = 0; i < cart.length; i++){
-    description = `${description} ${cart[i].itemName} at $${cart[i].itemPrice}`;
+    description = `${description}${cart[i].itemName} at $${cart[i].itemPrice}`;
     if (i >= 0 && i < cart.length-2) {
       description = `${description}, `;
     }
