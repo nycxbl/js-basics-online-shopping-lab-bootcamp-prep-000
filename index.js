@@ -22,10 +22,10 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++){
     description = description + `${cart[i].itemName} at $${cart[i].itemPrice}`;
     if (i === cart.length){
-      description = " " + description + " , and ";
+      description = ` ${description} , and `;
     }
   }
-  return `and ${description}.`;
+  return `${description}.`;
 }
 //helper
 function generateCartItem(item){
