@@ -55,8 +55,8 @@ function removeFromCart(item) {
   return getCart().splice(itemIndex, 1);
 }
 
-function placeOrder(card){
-  if(card === null){
+function placeOrder(card=0){
+  if(card === 0){
     console.log("Sorry, we don't have a credit card on file for you..");
   } else {
     var sum = total();
