@@ -57,7 +57,7 @@ function removeFromCart(item) {
   array = cart.slice(0, itemIndex);
   array2 = cart.slice(itemIndex, cart.length-1);
   
-  return array;
+  return array.concat(array2);
 }
 
 //helper function
