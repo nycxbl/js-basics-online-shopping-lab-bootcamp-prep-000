@@ -54,8 +54,8 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
   
-  array1 = cart.slice(0, itemIndex+1);
-  array2 = cart.slice(itemIndex, cart.length+1);
+  array1 = getCart().slice(0, itemIndex+1);
+  array2 = getCart().slice(itemIndex, cart.length+1);
   
   return array1.concat(array2);
 }
